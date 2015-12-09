@@ -26,3 +26,18 @@ $app = require __DIR__.'/../bootstrap/app.php';
 */
 
 $app->run();
+
+/*
+|--------------------------------------------------------------------------
+| If Error In Routs
+|--------------------------------------------------------------------------
+|
+| After installation facing error in public rout "page not found" the comment the above $app->run(); and 
+| uncomment the below 2 lines
+| $request = Illuminate\Http\Request::capture();
+| $app->run($request);
+| Then it should work fine.
+*/
+
+//$request = Illuminate\Http\Request::capture();
+//$app->run($request);
